@@ -1,0 +1,54 @@
+# Ambiente virtual (virtualenv ou venv)
+env/
+venv/
+ENV/
+.venv/
+
+# Bytecode do Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos temporários e de log
+*.log
+*.pot
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.bak
+*.tmp
+
+# Configurações do sistema/macOS
+.DS_Store
+Thumbs.db
+
+# Arquivos do editor/IDE
+# .vscode/
+.idea/
+*.code-workspace
+
+# Arquivos de banco de dados temporários
+*.sqlite3
+*.db
+
+# Variáveis de ambiente
+# .env
+
+# Cache do pip
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Arquivos do pytest e cobertura de testes
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+
+# Pasta de distribuição (se futuramente fizer um pacote)
+dist/
+build/
+*.egg-info/
+
+#Pasta de extensões
+*.VSCodeCounter/

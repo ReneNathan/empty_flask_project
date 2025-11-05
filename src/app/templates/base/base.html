@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="icon" type="image/x-icon" href="{{ url_for('static', filename='img/ambulance.ico') }}">
+
+  <!--CSS Global-->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/reset.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+  <!-- BLOCO PARA CSS ESPECÍFICO -->
+  {% block internal_stylesheet %}
+  {% endblock %}
+</head>
+
+<body>
+  {% block content %}{% endblock %}
+</body>
+  <!--JS Global-->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+
+  <!-- BLOCO PARA JS ESPECÍFICO -->
+  {% block scripts %}
+  {% endblock %}
+</html>

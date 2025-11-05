@@ -1,0 +1,20 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Flask Debug",
+      "type": "debugpy",
+      "request": "launch",
+      "program": "${workspaceFolder}/src/run.py",
+      "env": {
+        "FLASK_ENV": "development",
+        "FLASK_APP": "src/run.py"
+      },
+      "envFile": "${workspaceFolder}/.env",
+      "args": [],
+      "jinja": true,
+      "console": "integratedTerminal",
+      "python": "${workspaceFolder}/.venv/Scripts/python.exe"
+    }
+  ]
+}
